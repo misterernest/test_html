@@ -1,0 +1,12 @@
+* {
+  border: 1px solid #000;
+}
+nav {
+  height: 6rem;
+  padding: 2rem;
+}
+
+header {
+  height: 30rem;
+  margin-bottom: 1rem;
+}
