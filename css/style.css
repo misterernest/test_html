@@ -33,7 +33,7 @@ ul>li>a, nav {
   height: inherit;
   width: auto;
 }
-ul>li:hover{
+ul>li:hover {
   border-bottom: 3px solid #876ff5;
   color: #876ff5;
 }
@@ -51,13 +51,13 @@ header {
   color: #555555;
   margin-top: 0.5rem;
 }
-.service > div{
+.service > div {
   margin-top: 3rem;
 }
-.service h4{
+.service h4 {
   color: #555555;
 }
-h4>span{
+h4>span {
   font-size: 0.5rem;
 }
 .service {
@@ -68,29 +68,123 @@ h4>span{
   background-image: url('../img/success-bg.png');
   padding-top: 3rem;
 }
-.success-stories>div>.btn{
+.success-stories>div>.btn {
   margin-top: 6rem;
 
   width: 100%;
 }
 /*  FOURTH SEGMENT */
-
+.number {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 0.8rem;
+  color: #777777;
+}
+.number>.img {
+  margin-left: 3rem;
+}
+.number h3 {
+  font-size: 1.6rem;
+  letter-spacing: 10px;
+  border-bottom: 1px solid #ff7400;
+  height: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.number>.text {
+  margin: auto auto auto 2rem;
+}
+.text div {
+  font-size: 0.9rem;
+}
 /*  FIFTH SEGMENT */
 
+.tape {
+  padding: 2rem 0;
+  height: 10rem;
+  font-family: ;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.tape>div {
+  padding: 0 1rem;
+}
+.tape h3 {
+  font-size: 1.5rem;
+}
+.tape div div {
+  font-size: 0.8rem;
+  padding: auto 1rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font
+}
+.tape div span {
+  font-size: 0.4rem;
+}
+
 /*  SIXTH SEGMENT */
-
+.b2b {
+  color: #aaa;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+.b2b > div:first-child {
+  padding-right: 2rem;
+}
+.b2b > div:nth-child(2) {
+  padding-top: 2rem;
+}
+h2{
+  font-size: 5rem;
+  font-family: Poppins;
+  margin: -2rem 0 3rem 0;
+}
+.b2b-item > div{
+  display: flex;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+.b2b-item div span {
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
 /*  SEVENTH SEGMENT */
-
+.b2b-success {
+  font-size: 2rem;
+  font-family: Montserrat;
+}
+hr{
+  border-color: #ff7400;
+  width: 60%;
+}
 /*  EIGHTH SEGMENT */
 
 /*  NINETH SEGMENT */
 
 
 /*  TENTH SEGMENT */
+footer {
+  background-color: #000;
+  font-size: 0.6rem;
+  font-family: Poppins;
+  height: 4rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
 
+.container-social-footer{
+  height: 2.3rem;
+  border-left: 1px solid #ffffff;
+  padding-left: 1rem;
+}
 /*  MIX SEGMENT */
 
-header, .success-stories, .erp{
+header, .success-stories, .erp {
   height: 35rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,13 +203,17 @@ header, .success-stories, .bg-orange, .erp {
   margin: 15px auto;
 }
 
-h4, nav {
+h4, nav, h3 {
   font-family: Poppins
 }
-h4{
+h4 {
   font-size: 1rem;
   text-align: center;
   border-bottom: 1px solid #cccccc;
   padding-bottom: 1rem;
   margin-bottom: 2.5rem;
+}
+
+strong {
+  font-weight: bolder;
 }
