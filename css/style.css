@@ -45,9 +45,6 @@ header {
 }
 
 /*  SECOND SEGMENT */
-.service {
-  margin: 3rem auto;
-}
 .text-service {
   font-size: 0.6rem;
   text-align: center;
@@ -63,8 +60,19 @@ header {
 h4>span{
   font-size: 0.5rem;
 }
+.service {
+  margin: 3rem auto;
+}
 /*  THIRD SEGMENT */
+.success-stories {
+  background-image: url('../img/success-bg.png');
+  padding-top: 3rem;
+}
+.success-stories>div>.btn{
+  margin-top: 6rem;
 
+  width: 100%;
+}
 /*  FOURTH SEGMENT */
 
 /*  FIFTH SEGMENT */
@@ -81,9 +89,7 @@ h4>span{
 /*  TENTH SEGMENT */
 
 /*  MIX SEGMENT */
-.success-stories {
-  background-image: url('../img/success-bg.png');
-}
+
 header, .success-stories, .erp{
   height: 35rem;
   background-position: center;
