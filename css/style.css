@@ -201,6 +201,8 @@ h2{
   .contact-us {
     background-color: #f5f6f5;
     padding: 3rem 7rem;
+    color: #777;
+    font-size: 0.8rem;
   }
   .contact-us hr {
     border: 1px solid #555;
@@ -214,6 +216,12 @@ h2{
   .cont-form {
     display: flex;
     flex-direction: column;
+  }
+  input[type="submit"] {
+    background-color: #f5f6f5;
+  }
+  input[type="submit"]:hover {
+    background-color: #ffffff;
   }
   .cont-form form > div{
     display: flex;
