@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Poppins:100,400,700|Varela+Round" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Aventi</title>
 </head>
-<body class="container">
+<body class="container-fluid">
 
   <nav class="row">
     <!-- navbar -->
@@ -36,22 +36,18 @@
   </nav>
 
   <header class="row">
-    <h1>
-      <div class="">
-        Expertos en ecommerce y partners
-      </div>
-      <div class="">
+    <h1 class="col-md-12">
+        Expertos en ecommerce y partners<br>
         oficiales de Magento
-      </div>
     </h1>
     <hr>
-    <article class="">
+    <article class="col-md-12">
       Ayudamos a empresas <strong>B2B</strong> y <strong>B2C</strong> grandes
       y medianas a crecer sus ventas con
       <br>
       la plataforma de ecommerce más flexible del mundo.
     </article>
-    <div>
+    <div class="mx-auto">
       <img src="img/header-mag.png" alt="business magento">
     </div>
   </header>
@@ -167,22 +163,22 @@
 
   <aside class="row bg-orange tape">
     <!-- product -->
-    <div class="col-md-3">
+    <div class="col-md-2">
       <h3>+250.000</h3>
       <div>Tiendas online usan Magento en el mundo</div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <h3>3X</h3>
       <div>
         Promedio de crecimiento de tiendas en Magento
         <br><span>*Internet Retailer Top 1000</span>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <h3>+1000</h3>
       <div>Plataforma ecommerce más escalable y flexible</div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <h3>#1</h3>
       <div>Plataforma de comercio electronico en el IR TOP 500</div>
     </div>
@@ -255,28 +251,32 @@
     <!-- integration ERP - B2B + B2C -->
     <div class="col-md-6">
       <img src="img/int-erp-bg.png" alt="integración ERP">
-      <div>Integración ERP</div>
-      <div>
-        Integramos su tienda online en Magento a sus procesos, aplicaciones y ERPs
-        como SAP, Oracle. Microsoft Dynamics, Siesa.
+      <div class="erp-text">
+        <div class="erp-title">Integración ERP</div>
+        <div>
+          Integramos su tienda online en Magento a sus procesos, aplicaciones y ERPs
+          como SAP, Oracle. Microsoft Dynamics, Siesa.
+        </div>
       </div>
     </div>
     <div class="col-md-6">
       <img src="img/int-b2b-bg.png" alt="B2B + B2C">
-      <div>B2B + B2C</div>
-      <div>
-        Podemos conectar su negocio B2B (Empresa-empresa) y B2C (Empresa –
-        cliente final) con una única plataforma para el cliente y un único centro de
-        control, integrado a su ERP y con versión móvil.
+      <div class="erp-text">
+        <div class="erp-title">B2B + B2C</div>
+        <div>
+          Podemos conectar su negocio B2B (Empresa-empresa) y B2C (Empresa –
+          cliente final) con una única plataforma para el cliente y un único centro de
+          control, integrado a su ERP y con versión móvil.
+        </div>
       </div>
     </div>
   </article>
 
-  <aside>
+  <aside class="row contact-us">
     <!-- form -->
-
-    <div>
-      <div><img src="" alt=""></div>
+    <div class="col-md-3">
+      <div class="img"><img src="img/ico-house.png" alt=""></div>
+      <hr>
       <div>
         <div><strong>OFICINAS CALI</strong></div>
         <div>Cra. 67 # 18 - 35</div>
@@ -284,32 +284,54 @@
         <div><strong>OFICINAS BOGOTÁ</strong></div>
         <div>+57(1)7444135</div>
       </div>
+      <hr>
       <div><strong>CORREO:</strong></div>
       <div>info@aventi.co</div>
       <div><strong>SKYPE</strong></div>
       <div>Aventi.solutions</div>
     </div>
-    <div class="">
-      <div>Contactenos</div>
+    <div class="col-md-9 cont-form">
       <form class="" action="index.html" method="post">
-        <div>
-          <div><input type="text" name="" value=""></div>
-          <div><input type="text" name="" value=""></div>
+        <div class="col-md-12 form-group">Contactenos</div>
+        <div class="col-md-12 mb-2">
+          <div class="col-md-6 form-group">
+            <label for="">NOMBRE*</label>
+            <input type="text" name="" value="" class="form-control">
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="">EMAIL</label>
+            <input type="text" name="" value="" class="form-control">
+          </div>
         </div>
-        <div>
-          <div><input type="text" name="" value=""></div>
-          <div><input type="text" name="" value=""></div>
+        <div class="col-md-12 mb-2">
+          <div class="col-md-6 form-group">
+            <label for="">TELÉFONO*</label>
+            <input type="text" name="" value="" class="form-control">
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="">EMPRESA</label>
+            <input type="text" name="" value="" class="form-control">
+          </div>
         </div>
-        <div>
-          <div><input type="text" name="" value=""></div>
+        <div class="col-md-12 mb-2">
+          <div class="col-md-12 form-group">
+            <label for="">MENSAJE <span>(CUENTANOS MAS SOBRE TI)</span></label>
+            <textarea name="name" rows="3" cols="80" class="form-control"></textarea>
+          </div>
         </div>
-        <div>
-          <div>enviar mensaje</div>
+        <div class="col-md-4 form-group">
+          <input type="submit" name="" value="enviar mensaje" class="form-control">
         </div>
       </form>
       <div>
-        <div></div>
-        <div>Déjanos tu mensaje</div>
+        <div class="message">
+          <div class="icon">
+            <i class="far fa-comments"></i>
+          </div>
+          <div class="text">
+            Déjanos tu mensaje
+          </div>
+        </div>
       </div>
     </div>
   </aside>

@@ -42,8 +42,25 @@ header {
   background-image: url('../img/header-bg.png');
   margin-bottom: 1rem;
   padding: 3rem 0;
+  text-align: center;
+}
+header h1 {
+  text-align: center;
+  margin: 0 auto;
 }
 
+header hr{
+  border: 1px solid #fff;
+  width: 40%;
+  margin: -2rem auto 0 auto;
+  padding: 0;
+}
+header article {
+  font-size: 1.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: lighter;
+  margin-top: -3rem;
+}
 /*  SECOND SEGMENT */
 .text-service {
   font-size: 0.6rem;
@@ -130,6 +147,7 @@ h4>span {
   color: #aaa;
   margin-top: 5rem;
   margin-bottom: 1rem;
+  margin-left: 6rem;
 }
 .b2b > div:first-child {
   padding-right: 2rem;
@@ -141,10 +159,11 @@ h2{
   font-size: 5rem;
   font-family: Poppins;
   margin: -2rem 0 3rem 0;
+  padding-left: 1rem;
 }
 .b2b-item > div{
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
@@ -156,23 +175,88 @@ h2{
 .b2b-success {
   font-size: 2rem;
   font-family: Montserrat;
+  margin-bottom: 2.5rem;
 }
-hr{
+.b2b hr{
   border-color: #ff7400;
   width: 60%;
 }
 /*  EIGHTH SEGMENT */
-
+.erp-text {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  padding: 0 15%;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+.erp-title {
+  font-size: 3rem;
+  font-family: 'Varela Round', sans-serif;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0.8rem;
+}
 /*  NINETH SEGMENT */
-
-
+  .contact-us {
+    background-color: #f5f6f5;
+    padding: 3rem 7rem;
+  }
+  .contact-us hr {
+    border: 1px solid #555;
+    text-align: left;
+    width: 40%;
+    margin: 1rem 0;
+  }
+  .contact-us .img {
+    width: 20px;
+  }
+  .cont-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-form form > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .message {
+    display: flex;
+    text-align: center;
+    width: 24%;
+    position: absolute;
+    bottom: -3rem;
+    right: -5rem;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    padding: 0rem;
+}
+.message > .text {
+  padding: 0.1rem;
+  background-color: #424bd8;
+  width: 80%;
+  height: 100%;
+  border-radius: 0 4px 0 0;
+  padding: 0.2rem;
+}
+.message > .icon {
+  background-color: #876ff5;
+  width: 20%;
+  padding: 0.2rem;
+    border-radius: 4px 0 0 0;
+}
 /*  TENTH SEGMENT */
 footer {
   background-color: #000;
-  font-size: 0.6rem;
-  font-family: Poppins;
+  font-size: 0.7rem;
+  font-family: 'Varela Round', sans-serif
   height: 4rem;
   padding-top: 1rem;
+  color: #fff;
   display: flex;
   justify-content: center;
 }
@@ -184,11 +268,14 @@ footer {
 }
 /*  MIX SEGMENT */
 
-header, .success-stories, .erp {
+header, .success-stories, .erp, .contact-us {
   height: 35rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.erp {
+  height: 30rem;
 }
 header, .success-stories, .bg-orange, .erp {
   color: #ffffff;
