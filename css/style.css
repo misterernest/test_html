@@ -13,6 +13,7 @@ nav {
   background-color: #ffffff;
   font-size: 0.9rem;
   color: #cccccc;
+  box-shadow: 0px 6px 10px rgba(0,0,0,0.35);
 }
 .box-social {
   border-left: 1px solid #555;
@@ -37,6 +38,7 @@ header {
   margin-bottom: 1rem;
   padding: 3rem 0;
   text-align: center;
+  box-shadow: 0px 6px 10px rgba(0,0,0,0.35);
 }
 header h1 {
   text-align: center;
@@ -76,11 +78,23 @@ h4>span {
 .service {
   margin: 3rem auto;
 }
+
+.service-img {
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 6px 6px rgba(0,0,0,0.35), 0 3px 6px rgba(0,0,0,0.23);
+}
+.service-img:hover {
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.35), 0 3px 3px rgba(0,0,0,0.23);
+}
 /*  THIRD SEGMENT */
 .success-stories {
   text-align: center;
   background-image: url('../img/success-bg.png');
   padding-top: 3rem;
+  box-shadow: 0px 6px 10px rgba(0,0,0,0.35), 0px -1px 6px rgba(0,0,0,0.35);
 }
 .success-stories>div>.btn {
   margin-top: 6rem;
@@ -119,6 +133,7 @@ h4>span {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  box-shadow: 0px 6px 10px rgba(0,0,0,0.35), 0px -1px 6px rgba(0,0,0,0.35);
 }
 .tape>div {
   padding: 0 1rem;
@@ -183,6 +198,9 @@ h2{
   width: 60%;
 }
 /*  EIGHTH SEGMENT */
+.erp {
+  box-shadow: 0px 6px 10px rgba(0,0,0,0.35), 0px -1px 6px rgba(0,0,0,0.35);
+}
 .erp-text {
   position: absolute;
   display: flex;
@@ -245,6 +263,7 @@ h2{
     position: absolute;
     bottom: 0rem;
     right: 1rem;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.35), 0px -1px 6px rgba(0,0,0,0.35);
   }
 .message > .text {
   padding: 0.1rem;
