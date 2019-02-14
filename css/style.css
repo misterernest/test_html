@@ -1,42 +1,36 @@
 /*  GENERAL */
-img {
-  width: 100%;
+* {
+  box-sizing: border-box;
+}
+body {
+  padding-top: 5rem;
 }
 
 
 /*  FIRST SEGMENT */
 
 nav {
-  margin-top: 1rem;
-  margin-bottom: 3px;
+  background-color: #ffffff;
   font-size: 0.9rem;
   color: #cccccc;
 }
-ul>li>a, nav {
-  height: 4.5rem;
+.box-social {
+  border-left: 1px solid #555;
 }
-.logo {
-  width: 8rem;
-  margin-left: 3rem;
+
+.container-nav {
+  height: 5rem;
 }
-.img-icon-social {
-  margin-top: 0.4rem;
-  height: 0.8rem;
-  margin-right: 0.5rem;
+ul>li:hover {
+  border-bottom: 3px inset #876ff5;
+  color: #876ff5;
 }
 .container-social{
   height: 2.5rem;
   border-left: 2px solid #cccccc;
   padding-left: 1rem;
 }
-.img-icon-social>img {
-  height: inherit;
-  width: auto;
-}
-ul>li:hover {
-  border-bottom: 3px solid #876ff5;
-  color: #876ff5;
-}
+
 
 header {
   background-image: url('../img/header-bg.png');
@@ -62,17 +56,19 @@ header article {
   margin-top: -3rem;
 }
 /*  SECOND SEGMENT */
+
 .text-service {
   font-size: 0.6rem;
   text-align: center;
   color: #555555;
   margin-top: 0.5rem;
 }
-.service > div {
-  margin-top: 3rem;
-}
 .service h4 {
   color: #555555;
+}
+.service-item > div {
+  width: 6rem;
+  margin: 2rem 3rem;
 }
 h4>span {
   font-size: 0.5rem;
@@ -82,12 +78,12 @@ h4>span {
 }
 /*  THIRD SEGMENT */
 .success-stories {
+  text-align: center;
   background-image: url('../img/success-bg.png');
   padding-top: 3rem;
 }
 .success-stories>div>.btn {
   margin-top: 6rem;
-
   width: 100%;
 }
 /*  FOURTH SEGMENT */
@@ -118,7 +114,6 @@ h4>span {
 
 .tape {
   padding: 2rem 0;
-  height: 10rem;
   font-family: ;
   text-align: center;
   display: flex;
@@ -151,15 +146,20 @@ h4>span {
 }
 .b2b > div:first-child {
   padding-right: 2rem;
+  box-sizing: border-box;
 }
 .b2b > div:nth-child(2) {
   padding-top: 2rem;
+
 }
 h2{
   font-size: 5rem;
   font-family: Poppins;
   margin: -2rem 0 3rem 0;
   padding-left: 1rem;
+}
+.b2b p {
+  font-size: 1.2rem;
 }
 .b2b-item > div{
   display: flex;
@@ -173,9 +173,10 @@ h2{
 }
 /*  SEVENTH SEGMENT */
 .b2b-success {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: Montserrat;
-  margin-bottom: 2.5rem;
+  text-align: center;
+  padding: 2rem;
 }
 .b2b hr{
   border-color: #ff7400;
@@ -184,7 +185,9 @@ h2{
 /*  EIGHTH SEGMENT */
 .erp-text {
   position: absolute;
-  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 0 15%;
   font-size: 0.9rem;
@@ -200,22 +203,29 @@ h2{
 /*  NINETH SEGMENT */
   .contact-us {
     background-color: #f5f6f5;
-    padding: 3rem 7rem;
     color: #777;
     font-size: 0.8rem;
+    padding-left: 3rem;
   }
   .contact-us hr {
     border: 1px solid #555;
     text-align: left;
     width: 40%;
+    margin: 0.4rem 0;
+  }
+  .form-group div:first-child {
+    padding-right: 0.5rem;
+  }
+  .contact-us form hr{
+    width: 3rem;
     margin: 1rem 0;
   }
   .contact-us .img {
+    height: 20px;
     width: 20px;
   }
-  .cont-form {
-    display: flex;
-    flex-direction: column;
+  .contact-us .img > img {
+    width: 100%;
   }
   input[type="submit"] {
     background-color: #f5f6f5;
@@ -223,26 +233,19 @@ h2{
   input[type="submit"]:hover {
     background-color: #ffffff;
   }
-  .cont-form form > div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    width: 100%;
-  }
   .message {
     display: flex;
     text-align: center;
-    width: 24%;
-    position: absolute;
-    bottom: -3rem;
-    right: -5rem;
+    width: 11rem;
     color: #fff;
     font-family: Montserrat, sans-serif;
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 0rem;
-}
+    position: absolute;
+    bottom: 0rem;
+    right: 1rem;
+  }
 .message > .text {
   padding: 0.1rem;
   background-color: #424bd8;
@@ -272,19 +275,25 @@ footer {
 .container-social-footer{
   height: 2.3rem;
   border-left: 1px solid #ffffff;
-  padding-left: 1rem;
+}
+.img-icon-social {
+  height: 10px;
+}
+.img-icon-social > img {
+  width: 100%
 }
 /*  MIX SEGMENT */
 
-header, .success-stories, .erp, .contact-us {
+header, .success-stories {
   height: 35rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.erp {
-  height: 30rem;
+section img, aside img, article img, section.service img {
+  width: 100%;
 }
+
 header, .success-stories, .bg-orange, .erp {
   color: #ffffff;
 }
@@ -311,4 +320,377 @@ h4 {
 
 strong {
   font-weight: bolder;
+}
+
+@media (max-width: 575.98px) {
+  /*  GENERAL */
+    body { padding-top: 3rem; }
+
+
+    /*  FIRST SEGMENT */
+
+    nav {
+      background-color: #ffffff;
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+    .container-nav {
+      height: inherit;
+    }
+    .navbar-brand img {
+      width: 3rem;
+    }
+    .box-social {
+      border-left: 0px solid #555;
+          justify-content: space-evenly;
+    }
+    .container-social{
+      height: inherit;
+      border-left: 0px solid #cccccc;
+    }
+
+    header h1 {
+      font-size: 1rem;
+    }
+    header article {
+      font-size: 0.7rem;
+      margin: 1px;
+    }
+    header hr{
+      border: 0px solid #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header img {
+      width: 40%;
+    }
+
+    /*  SECOND SEGMENT */
+    .service {
+        margin: 1rem auto;
+    }
+    .service-item > div {
+      width: 4rem;
+      margin: 0.5rem 0.5rem;
+    }
+
+    /*  THIRD SEGMENT */
+    .success-stories {
+      padding-top: 0.4rem;
+      font-size: 0.6rem;
+    }
+
+    .success-stories>div>.btn {
+      margin-top: 0.2rem;
+    }
+
+    /*  FOURTH SEGMENT */
+    .number {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .number>.img {
+      margin: 0.3rem auto;
+    }
+    .number h3 {
+      font-size: 1.2rem;
+      letter-spacing: 5px;
+      border-bottom: 1px solid #ff7400;
+      text-align: center;
+      height: 2rem;
+      margin-bottom: 0.3rem;
+    }
+    .number>.text {
+      margin: auto;
+    }
+    .text div {
+      font-size: 0.8rem;
+    }
+
+    /* FIFTH SEGMENT */
+    .tape>div {
+      padding: 0.4rem 1rem;
+    }
+    /*  SIXTH SEGMENT */
+    .b2b {
+      color: #aaa;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      margin-left: 0.3rem;
+    }
+    .b2b > div:nth-child(2) {
+      padding-top: 0;
+
+    }
+    h2 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .b2b p {
+      font-size: 0.8rem;
+    }
+    .b2b-item > div {
+      font-size: 0.8rem;
+      padding-bottom: 0.3rem;
+      padding-top: 0.3rem;
+    }
+    .b2b-item div span {
+      font-weight: 900;
+      margin-right: 0.5rem;
+    }
+
+    /*  SEVENTH SEGMENT */
+    .b2b-success {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+    /*  EIGHTH SEGMENT */
+    .erp-text {
+      top:10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem;
+      font-size: 0.55rem;
+    }
+    .erp-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+    }
+
+    /*  NINETH SEGMENT */
+      .contact-us {
+        padding-left: 0.4rem;
+      }
+      .form-group div:first-child {
+        padding-right: 0;
+      }
+      .form-group > div {
+        padding-right: 0.1rem;
+      }
+      .contact-us hr {
+        border: 0px solid #555;
+      }
+
+    /* MIX SEGMENT */
+
+    header, .success-stories {
+      height: 13rem;
+    }
+    h4 {
+      margin-bottom: 0;
+      padding-bottom: 0.2rem;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header article {
+    font-size: 1rem;
+    margin: 1px;
+  }
+
+  /*  SECOND SEGMENT */
+  .service-item > div {
+    width: 6rem;
+    margin: 1rem 1rem;
+  }
+  /*  THIRD SEGMENT */
+  .success-stories {
+    padding-top: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .success-stories>div>.btn {
+    margin-top: 0.2rem;
+  }
+
+  /* FIFTH SEGMENT */
+  .tape>div {
+    padding: 0.4rem 1rem;
+  }
+
+  /*  SIXTH SEGMENT */
+  .b2b {
+    color: #aaa;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.3rem;
+  }
+  .b2b > div:nth-child(2) {
+    padding-top: 0;
+
+  }
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .b2b p {
+    font-size: 0.8rem;
+  }
+  .b2b-item > div {
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+  }
+  .b2b-item div span {
+    font-weight: 900;
+    margin-right: 0.5rem;
+  }
+
+  /*  SEVENTH SEGMENT */
+  .b2b-success {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  /*  EIGHTH SEGMENT */
+  .erp-text {
+    top:20%;
+    padding: 0 15%;
+    font-size: 1rem;
+  }
+  .erp-title {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /*  NINETH SEGMENT*/
+
+  .contact-us hr {
+    border: 0px solid #555;
+  }
+
+  /* MIX SEGMENT */
+
+  header, .success-stories {
+    height: 15rem;
+  }
+  h4 {
+    margin-bottom: 0;
+    padding-bottom: 0.2rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*  SECOND SEGMENT */
+  .service-item > div {
+    width: 6rem;
+    margin: 3rem;
+  }
+
+  .number h3 {
+    font-size: 1.4rem;
+    letter-spacing: 9px;
+  }
+
+  /*  SIXTH SEGMENT */
+  .b2b {
+    color: #aaa;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.3rem;
+  }
+  .b2b > div:nth-child(2) {
+    padding-top: 0;
+
+  }
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .b2b p {
+    font-size: 0.8rem;
+  }
+  .b2b-item > div {
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+  }
+  .b2b-item div span {
+    font-weight: 900;
+    margin-right: 0.5rem;
+  }
+  /*  SEVENTH SEGMENT */
+  .b2b-success {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  /*  EIGHTH SEGMENT */
+  .erp-text {
+    top: 30%;
+    padding: 0 15%;
+    font-size: 0.7rem;
+  }
+  .erp-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /*  NINETH SEGMENT */
+    .contact-us {
+      padding-left: 2rem;
+    }
+    .form-group div:first-child {
+      padding-right: 0.5rem;
+    }
+    .form-group > div {
+      padding-right: 0.1rem;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .service-item > div {
+    width: 10rem;
+    margin: 1rem 4rem;
+  }
+
+  /*  EIGHTH SEGMENT */
+  .erp-text {
+    top: 30%;
+    padding: 0 15%;
+    font-size: 1rem;
+  }
+  .erp-title {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  /*  NINETH SEGMENT */
+    .contact-us {
+      padding-left: 2rem;
+    }
+    .form-group div:first-child {
+      padding-right: 0.5rem;
+    }
+}
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .service-item > div {
+    width: 10rem;
+    margin: 1rem 4rem;
+  }
+
+  /*  EIGHTH SEGMENT */
+  .erp-text {
+    top: 30%;
+    padding: 0 15%;
+    font-size: 1.3rem;
+  }
+  .erp-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  /*  NINETH SEGMENT */
+    .contact-us {
+      padding-left: 2rem;
+    }
+    .form-group div:first-child {
+      padding-right: 0.5rem;
+    }
 }
