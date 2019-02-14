@@ -2,8 +2,13 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   padding-top: 5rem;
+}
+
+header div, .service div, .success-stories div, .b2b div, .erp div, .contact div {
+  margin-bottom: 5rem;
 }
 
 
@@ -22,7 +27,7 @@ nav {
 .container-nav {
   height: 5rem;
 }
-ul>li:hover {
+ul>li:hover, ul>li.active {
   border-bottom: 3px inset #876ff5;
   color: #876ff5;
 }
